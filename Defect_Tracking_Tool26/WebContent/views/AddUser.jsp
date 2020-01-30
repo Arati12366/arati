@@ -111,8 +111,9 @@
 											<div class="col-sm-8">
 												<input type="text" class="form-control"
 													placeholder="PHONE NO. " name="contact" maxlength="10"
-													onblur="validateContact()"
+													onblur="validateNumber(this)"
 													onkeypress="return isNumberKey(event);" required>
+													<span id="mob" class="text-danger"></span>
 											</div>
 										</div>
 										<div class="form-group row">
@@ -369,9 +370,16 @@
 		   {
 			   $(".displayUpdatecontent").html(response);
 		   }
-	   });//alert("bye");
+	   });//alert("bye"); 
    }
    </script>
+   <script type="text/javascript">
+   function validation(){
+	   var user=document.getElementById('user').value;
+	   if(user==""){
+		   document.getElementById('phone no').inner.HTML=""
+	   }
+   }
    </body>
 
 </html>

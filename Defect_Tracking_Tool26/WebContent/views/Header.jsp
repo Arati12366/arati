@@ -29,17 +29,7 @@
 
 .
 {
-color
-
-
-:
-
- 
-
-#0a0a0a
-
-
-;
+color:#0a0a0a;
 }
 .rightNav {
 	list-style-type: none;
